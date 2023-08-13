@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* min-height: 100vh; */
+  background: hsl(0, 0%, 100%);
+}
+
+.container {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  margin-right: 0.6rem;
+}
+
+.alert-count {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.7rem;
+}
+
+.mark-read {
+  margin-left: auto;
+  color: hsl(219, 12%, 42%);
+  font-size: 0.8rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.mark-read:hover {
+  text-decoration: underline;
+}
+
+.read {
+  visibility: hidden;
+}
+
+.name {
+  font-weight: 700;
+  color: black;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.postdate {
+  color: hsl(219, 14%, 63%);
+}
+
+.comment {
+  color: hsl(219, 12%, 42%);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+#thumbnail {
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+.msg {
+  font-weight: 800;
+}
+
+.notification-icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.club {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
+
+.private-msg {
+  padding: 0.5rem;
+  border: 2px solid hsl(205, 33%, 90%);
+  max-width: 250px;
+  width: 100%;
+  margin: 0 6rem;
+}
+
+.private-msg-content {
+  color: hsl(219, 12%, 42%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#chess {
+  width: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin: 2rem auto;
+    max-width: 768px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .mark-read {
+    font-size: 1rem;
+  }
+
+  .notification {
+    padding: 1.2rem 0;
+  }
+
+  .private-msg {
+    margin: 0 0 0 6rem;
+    min-width: 500px;
+  }
+
+  .avatar {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .chess {
+    margin-left: auto;
+  }
+}
